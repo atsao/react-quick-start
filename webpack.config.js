@@ -40,6 +40,10 @@ let config = {
         exclude: null,
         loader: env === 'development' ? 'style!css?sourceMap' : ExtractTextPlugin.extract('style', 'css?sourceMap'),
       },
+      {
+        test: /\.(jpe?g|png|gif|svg|eot|svg|ttf|woff|woff2)$/i,
+        loader: 'file',
+      },
     ],
   },
   plugins: [
