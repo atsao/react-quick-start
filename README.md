@@ -12,6 +12,7 @@ Boilerplate template for react projects.
 * PostCSS
 * Webpack
   * Hot Module Reload
+  * Autoprefixer
 
 ## Getting Started
 
