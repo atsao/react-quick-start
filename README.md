@@ -20,6 +20,9 @@ To install dependencies:
 
 `npm install`
 
-Then run:
-
-`npm start`
+| `npm run [script]`  | Description   |
+| -------------       |---------------|
+| `start`             | Serves app at http://localhost:3000. HMR enabled |
+| `build`             | Compiles app for production      |
+| `lint`              | Lint all `.js` and `.jsx` files      |
+| `lint:fix`          | Lint and fix all `.js` and `.jsx` files      |
