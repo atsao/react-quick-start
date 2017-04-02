@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/index.js",
     "build": "NODE_ENV=production webpack --colors --progress",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.1",
+    "babel-jest": "^19.0.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.0",
     "eslint": "^3.19.0",
     "eslint-config-react-app": "^0.6.2",
@@ -50,6 +51,7 @@
     "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-react": "^6.10.3",
     "identity-obj-proxy": "^3.0.0",
+    "jest": "^19.0.2",
     "morgan": "^1.8.1",
     "postcss-import": "^9.1.0",
     "prettier": "^0.22.0",
