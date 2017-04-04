@@ -1,14 +1,3 @@
 {
-  "presets": [["es2015", {"modules": false}], "stage-2", "react"],
-  "env": {
-    "production": {
-      "presets": ["babili"]
-    },
-    "test": {
-      "plugins": ["transform-es2015-modules-commonjs"]
-    }
-  },
-  "plugins": [
-    "react-hot-loader/babel"
-  ]
+  "presets": ["es2015", "stage-0", "react"]
 }

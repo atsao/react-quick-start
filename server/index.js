@@ -14,7 +14,21 @@ const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 if (process.env.NODE_ENV !== 'production') {
-  require('./config/dev')(app);
+  app.use(morgan('dev'));
+  app.use(require('webpack-dev-middleware')(compiler, {
+    publicPath: config.output.publicPath,
+    contentBase: config.output.contentBase,
+    hot: true,
+    quiet: false,
+    stats: {
+      colors: true,
+    },
+    noInfo: true,
+    watchOptions: {
+      ignored: /node_modules/,
+    },
+  }));
+  app.use(require('webpack-hot-middleware')(compiler));
 } else {
   app.use(express.static(path.resolve(__dirname, '..', 'build')));
   app.get('*', (req, res) => {
@@ -25,7 +39,7 @@ if (process.env.NODE_ENV !== 'production') {
 app.use('/api', router);
 require('./routes')(router);
 
-app.listen(port, err => {
+app.listen(port, (err) => {
   /* eslint-disable */
   if (err) return console.error(err);
   console.log('App is listening on', port);
