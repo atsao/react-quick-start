@@ -3,7 +3,7 @@ const path = require('path');
 const resolvePath = relativePath => path.resolve(__dirname, '..', relativePath);
 
 module.exports = {
-  nodeModulesPath: resolvePath('node_modules'),
+  nodeModules: resolvePath('node_modules'),
   app: {
     src: resolvePath('src'),
     srcIndex: resolvePath('src/index.js'),
