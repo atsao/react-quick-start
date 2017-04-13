@@ -1,5 +1,5 @@
-module.exports = (app) => {
+module.exports = app => {
   app.route('/healthcheck').get((req, res) => {
     res.send('OK');
   });
-}
+};
