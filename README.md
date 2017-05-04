@@ -1,6 +1,6 @@
 # React Quick Start
 
-![build](https://travis-ci.org/atsao/react-quick-start.svg?branch=master) [![dependencies Status](https://david-dm.org/atsao/react-quick-start/status.svg)](https://david-dm.org/atsao/react-quick-start) [![devDependencies Status](https://david-dm.org/atsao/react-quick-start/dev-status.svg)](https://david-dm.org/atsao/react-quick-start?type=dev)
+[![Dependency Status](https://gemnasium.com/badges/github.com/atsao/react-quick-start.svg)](https://gemnasium.com/github.com/atsao/react-quick-start)
 
 Boilerplate for quickly launching React projects.
 
