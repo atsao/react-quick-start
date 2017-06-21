@@ -1,6 +1,6 @@
 {
   "name": "react-quick-start",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React quick start boilerplate",
   "main": "server/index.js",
   "scripts": {
