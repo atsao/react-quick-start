@@ -12,7 +12,7 @@ Boilerplate for quickly launching React projects.
 * Babel, ES6
 * ESLint + PrettierJS
 * PostCSS
-* Webpack 2
+* Webpack 3
   * CSS Modules
     * PostCSS with Autoprefixer
   * Hot Module Reload
