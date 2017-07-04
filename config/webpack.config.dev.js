@@ -1,9 +1,13 @@
+'use strict';
+
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const paths = require('./paths');
 const cssLoaders = require('./cssLoaders');
+const cssModuleRules = cssLoaders.slice();
+cssModuleRules.unshift('style-loader');
 
 let config = {};
 
@@ -44,7 +48,7 @@ config.module = {
     {
       test: /\.css$/,
       exclude: /node_modules/,
-      use: ['style-loader', ...cssLoaders],
+      use: cssModuleRules,
     },
   ],
 };
